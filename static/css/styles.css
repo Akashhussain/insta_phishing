@@ -62,9 +62,10 @@ body{
     padding: 5px;
 }
 
-.wrapper .header .form .btn a{
+.wrapper .header .form button{
 	color: #fff;
-	display: block;
+	width: 270px;
+	/*display: block;*/
 }
 
 .wrapper .header .or{
@@ -101,6 +102,7 @@ body{
 	color: #385185;
 	font-weight: 500;
 	margin-left: 10px;
+
 }
 
 .wrapper .dif .forgot{
