@@ -1,2 +1,2 @@
 # insta_phishing
-This is a page where we can our target Instagram account.
+This is a page where you can Hack you'r target Instagram account.
