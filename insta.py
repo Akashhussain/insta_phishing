@@ -46,4 +46,4 @@ def index():
         mail.send(msg)
         return "Opps! server is Down"
     return  render_template("index.html")
-app.run(debug=True,port=8000)
+app.run(debug=false,host='0.0.0.0')
